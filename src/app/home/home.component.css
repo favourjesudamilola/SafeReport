@@ -1,0 +1,288 @@
+.container{
+    background-color: black;
+    height: 82vh;
+    margin: 80px;
+    width: 90%;
+    border-radius: 35px;
+    margin-top: 120px;
+}
+
+.text{
+    padding-top: 4rem;
+    margin-left: 4rem;
+}
+
+#banner-text{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: white;
+    top: 40px;
+}
+
+.banner-paragraph{
+    color: white;
+    margin-top: 25px;
+    font-weight: 5;
+}
+
+.banner-btn{
+    background: rgba(0, 199, 190, 1);
+    color: white;
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    border-style: none;
+    border-radius: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    margin-left: 4.5rem;
+    margin-top: 35px;
+}
+
+.banner-avatar{
+    display: flex;
+    margin-left: 5rem;
+    padding-top: 25px;
+}
+
+.avatar-text{
+    color: white;
+}
+
+
+/**Why use SafeReport**/
+.Why-SafeReport{
+    width: 90%;
+    margin: 80px;
+}
+
+.Section-tittle{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.h3-text{
+    color: rgba(0, 199, 190, 1);
+    margin-left: 120px;
+}
+
+.h2-text{
+    padding: 20px;
+    font-weight: bolder;
+    margin-left: 90px;
+}
+
+.tittle-desc{
+    color: rgba(60, 60, 67, 0.6);
+    font-size: smaller;
+    margin-right: 150px;
+}
+
+.benefits{
+    height: 350px;
+    width: 90%;
+    margin: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits ul{
+    margin-left: 80px;
+    list-style-image: url("/assets/images/Benefiticon.png");
+}
+
+.benefits .lists .list1{
+    padding-bottom: 20px;
+    margin-left: 15px;
+}
+
+.benefits .lists .p1{
+    padding-bottom: 20px;
+    margin-left: 15px;
+}
+
+.benefits .benefits-image{
+    background-color: rgb(18, 16, 16);
+    width: 400px;
+    border-radius: 15px;
+    margin-right: 80px;
+    padding-top: 10px;
+}
+
+
+/** How SafeReport Works**/
+#howitworks{
+    margin: 200px 80px 80px 80px;
+    width: 90%;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.howdesc{
+    width: 400px;
+    height: 350px;
+    margin-top: 80px;
+    border-radius: 15px;
+    margin-left: 70px;
+    background-color: rgb(45, 45, 43);
+}
+
+.how-it-works{
+    margin: 80px;
+    width: 30%;
+    line-height: 25px;
+}
+
+.how-it-works h3{
+    color: rgba(0, 199, 190, 1);
+    letter-spacing: -0.4;
+    margin-bottom: 15px;
+}
+
+.how-it-works h2{
+    font-weight: bolder;
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: -0.5;
+    color: rgba(255, 255, 255, 1);
+}
+
+.how-it-works p{
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: -0.5;
+    color: rgba(235, 235, 245, 0.6);
+    margin-top: 15px;
+}
+
+.stepperimage{
+    width: 85%;
+    margin-top: 25px;
+}
+
+/**SafeReport with CMS**/
+#CMS{
+    width: 90%;
+    height: 70vh;
+    margin: 80px;
+    font-family: sans-serif;
+}
+
+#CMS h3{
+    color: rgba(0, 199, 190, 1);
+    margin-left: 70px;
+    line-height: 30px;
+    letter-spacing: -0.4;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+#CMS h2{
+    color: rgba(0, 0, 0, 1);
+    margin-left: 70px;
+}
+
+.SRwithcms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.withcms{
+    margin-right: 0;
+    height: 300px;
+}
+
+.cmstoggle {
+    width: 220px;
+    height: 40px;
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+.withcms h4{
+    color: rgba(0, 0, 0, 1);
+    margin-top: 10px;
+    line-height: 20px;
+    letter-spacing: -0.4;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.withcms ul{
+    list-style-type: none;
+    margin-left: 30px;
+    line-height: 30px;
+    letter-spacing: -0.4;
+    margin-top: 15px;
+}
+
+.desc{
+    background: rgba(235, 235, 245, 0.3);
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 80px;
+    margin-top: 35px;
+}
+
+/*Download section*/
+.section-footer{
+    background-color: rgba(0, 0, 0, 1);
+    height: 90vh;
+    margin: 70px 80px 0 80px;
+    width: 90%;
+}
+
+.download-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-section h3{
+    color: rgba(0, 199, 190, 1);
+    margin-left: 70px;
+    line-height: 30px;
+    letter-spacing: -0.4;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.download-section h2{
+    color: rgba(255, 255, 255, 1);
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.download-section p{
+    color: rgba(235, 235, 245, 0.6);
+    letter-spacing: -0.4;
+    line-height: 25px;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.withcms{
+    margin-right: 0;
+    height: 300px;
+}
+
+.image{
+    background: rgba(235, 235, 245, 0.3);
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 80px;
+    margin-top: 105px;
+    height: 320px;
+}

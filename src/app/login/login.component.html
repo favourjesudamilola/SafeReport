@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="navbar">
+        <a routerLink="/">
+            <div class="left">
+                <img class="img" src="/assets/images/Logo.png">
+            </div>
+        </a>
+</div>
+
+<section>
+    <div id="main">
+        <div class="login-content">
+            <h2>Login</h2>
+            <p>At SafeReport our mission is to empower individuals <br>through innovative technology solutions <br>
+                that enrich lives, foster growth, and drive <br>positive change.</p>
+
+            <form>
+                <div class="Register">
+                    <label class="text">Email</label><br>
+                    <input formControlName="Email" type="email" placeholder="john123@gmail.com" required><br>
+
+                    <label class="text2">Password</label><br>
+                    <input formControlName="password" type="password" placeholder="********" required>
+                    <!-- add error message using ngIf -->
+                </div>
+
+                <label>
+                    <input id="check" type="checkbox" checked="checked" name="remember"> Remember me
+                </label><br>
+
+                <a routerLink="/report-form">
+                  <button type="submit" class="submit">login
+                  </button>
+                </a>
+            </form>
+        </div>
+
+        <div class="loginimg">
+            <img class="logindemo" src="/assets/images/Demo.png">
+        </div>
+    </div>
+</section>
