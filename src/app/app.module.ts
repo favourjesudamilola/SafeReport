@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ReportFormComponent } from './report-form/report-form.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FooterComponent,
     LoginComponent,
     ReportFormComponent,
-    ContactUsComponent
+    ContactUsComponent,
+
   ],
   imports: [
     BrowserModule,
