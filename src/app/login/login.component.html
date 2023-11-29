@@ -14,13 +14,15 @@
             <p>At SafeReport our mission is to empower individuals <br>through innovative technology solutions <br>
                 that enrich lives, foster growth, and drive <br>positive change.</p>
 
-            <form>
+            <form FormGroup = "login">
                 <div class="Register">
                     <label class="text">Email</label><br>
-                    <input formControlName="Email" type="email" placeholder="john123@gmail.com" required><br>
+                    <input formControlName="Email" type="email" placeholder="john123@gmail.com"><br>
+                    <span class="text-danger" *ngIf="login.controls['email'] && login.hasError('required', 'email')">*Email id is required</span>
 
                     <label class="text2">Password</label><br>
-                    <input formControlName="password" type="password" placeholder="********" required>
+                    <input formControlName="password" type="password" placeholder="********">
+                    <span class="text-danger" *ngIf="login.controls['password'] && login.hasError('required', 'password')">*password is required</span>
                     <!-- add error message using ngIf -->
                 </div>
 
@@ -28,8 +30,8 @@
                     <input id="check" type="checkbox" checked="checked" name="remember"> Remember me
                 </label><br>
 
-                <a routerLink="/report-form">
-                  <button type="submit" class="submit">login
+                <a routerLink="/report-form" (click)="handleLogin()">
+                  <button type="submit" [disabled]="login.invalid" class="submit">login
                   </button>
                 </a>
             </form>

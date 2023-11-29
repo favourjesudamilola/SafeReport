@@ -21,9 +21,14 @@
         </div>
     
         <div class="right">
-            <a routerLink="/login">
+            <a *ngIf="isAuthenticated === 'false'" routerLink="/login">
                 <button class="btn">Login</button>
             </a>
         </div>
+        <a *ngIf="isAuthenticated === 'true'" routerLink="/">
+            <div class="right">
+              <button class="btn">Logout</button>
+            </div>
+        </a>
     </div>
 </div>
