@@ -16,5 +16,48 @@
     <p>Logout</p>
 </div>
   </div>
-  <div class="table">somem</div>
+  <div class="main">
+    <div class="head">
+        <div class="types">
+            <input type="date"  [(ngModel)]="defaultDate">
+        </div>
+    <div class="types">
+
+  <select  [(ngModel)]="selectedCrimeType">
+    <option  *ngFor="let crimeType of crimeTypes" [ngValue]="crimeType">{{ crimeType }}</option>
+  </select>
+</div>
+    </div>
+    <!-- Table -->
+    <div >
+<table class="table transactionTable">
+ <thead>
+
+        <th class="">
+       
+          Report ID
+        </th>
+        <th>Type of Crime</th>
+        <th>Date</th>
+        <th>Time</th>
+        
+      </thead>
+      <tbody>
+<tr *ngFor="
+        let name of data
+        let i = index
+      " >
+    
+    <td class="check"> <input type="checkbox" >{{name.iD}}</td>
+<td>{{name.crime}}</td>
+<td>{{name.date}}</td>
+<td>{{name.time}}</td>
+
+
+</tr>
+
+      </tbody>
+</table>
+    </div>
+  </div>
   </div>

@@ -12,6 +12,8 @@ export class LoginComponent implements OnInit {
   constructor(private fB: FormBuilder) { }
 
   ngOnInit(): void {
+    console.log('yes');
+    
     this.login = this.fB.group({
       email : new FormControl('', [Validators.required, Validators.email]),
       password : new FormControl('', [Validators.required, Validators.minLength(8)])
