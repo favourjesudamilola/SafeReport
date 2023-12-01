@@ -18,11 +18,11 @@
                 <div class="Register">
                     <label class="text">Email</label><br>
                     <input formControlName="Email" type="email" placeholder="john123@gmail.com"><br>
-                    <span class="text-danger" *ngIf="login.controls['email'] && login.hasError('required', 'email')">*Email id is required</span>
+                    <span class="text-danger" *ngIf="login.controls['email'] && login.hasError('required', 'email')">*Email id is required</span><br>
 
                     <label class="text2">Password</label><br>
                     <input formControlName="password" type="password" placeholder="********">
-                    <span class="text-danger" *ngIf="login.controls['password'] && login.hasError('required', 'password')">*password is required</span>
+                    <span class="text-danger" *ngIf="login.controls['password'] && login.hasError('required', 'password')">*password is required</span><br>
                     <!-- add error message using ngIf -->
                 </div>
 
@@ -42,3 +42,5 @@
         </div>
     </div>
 </section>
+
+<app-footer></app-footer>

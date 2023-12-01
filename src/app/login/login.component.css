@@ -72,6 +72,12 @@
     border-radius: 5px;
 }
 
+.text-danger{
+    color: red;
+    font-size: smaller;
+    margin-left: 25px;
+}
+
 #check{
     margin-left: 20px;
 }
