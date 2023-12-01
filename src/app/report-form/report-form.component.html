@@ -1,1 +1,63 @@
-<p>report-form works!</p>
+<div class="container">
+  <div class="tab"> 
+<div class="top">
+    <img src="assets/images/face.svg" alt="">
+    <p>Welcome</p>
+</div>
+<div class="middle">
+    <img src="assets/images/row.svg" alt="">
+    <p>Reports</p>
+</div>
+
+<div class="line"></div>
+
+<div class="down">
+    <img src="assets/images/logout.svg" alt="">
+    <p>Logout</p>
+</div>
+  </div>
+  <div class="main">
+    <div class="head">
+        <div class="types">
+            <input type="date"  [(ngModel)]="defaultDate">
+        </div>
+    <div class="types">
+
+  <select  [(ngModel)]="selectedCrimeType">
+    <option  *ngFor="let crimeType of crimeTypes" [ngValue]="crimeType">{{ crimeType }}</option>
+  </select>
+</div>
+    </div>
+    <!-- Table -->
+    <div >
+<table class="table transactionTable">
+ <thead>
+
+        <th class="">
+       
+          Report ID
+        </th>
+        <th>Type of Crime</th>
+        <th>Date</th>
+        <th>Time</th>
+        
+      </thead>
+      <tbody>
+<tr *ngFor="
+        let name of data
+        let i = index
+      " >
+    
+    <td class="check"> <input type="checkbox" >{{name.iD}}</td>
+<td>{{name.crime}}</td>
+<td>{{name.date}}</td>
+<td>{{name.time}}</td>
+
+
+</tr>
+
+      </tbody>
+</table>
+    </div>
+  </div>
+  </div>

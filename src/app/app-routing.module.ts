@@ -6,10 +6,12 @@ import { ReportFormComponent } from './report-form/report-form.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
+  {path: "home", component: HomeComponent},
   {path: "login", component:LoginComponent},
   {path: "report-form", component:ReportFormComponent},
-  {path: "contact-us", component:ContactUsComponent},
+  { path: "contact-us", component: ContactUsComponent },
+  {path:'**',  component:HomeComponent}
+  
 ];
 
 @NgModule({
