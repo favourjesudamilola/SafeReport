@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,9 +11,6 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ReportFormComponent } from './report-form/report-form.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-
-
 
 @NgModule({
   declarations: [
@@ -25,14 +21,11 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     LoginComponent,
     ReportFormComponent,
-    ContactUsComponent,
-
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
