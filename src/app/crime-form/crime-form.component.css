@@ -1,0 +1,30 @@
+#Form-section{
+    margin: 80px;
+    width: 80%;
+}
+
+#tittle{
+    margin: 90px;
+    color: black;
+    width: 80%;
+}
+
+#tittle h2{
+    color: rgba(0, 0, 0, 1);
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 62px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+}
+
+#tittle p{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: rgba(60, 60, 67, 0.6);
+}

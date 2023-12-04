@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ReportFormComponent } from './report-form/report-form.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CrimeFormComponent } from './crime-form/crime-form.component';
 
 const routes: Routes = [
   {path: "home", component: HomeComponent},
   {path: "login", component:LoginComponent},
   {path: "report-form", component:ReportFormComponent},
   { path: "contact-us", component: ContactUsComponent },
+  {path: "crime-form", component: CrimeFormComponent},
   {path:'**',  component:HomeComponent}
   
 ];

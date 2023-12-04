@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ReportFormComponent } from './report-form/report-form.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CrimeFormComponent } from './crime-form/crime-form.component';
+import { CrimeFormHeaderComponent } from './crime-form-header/crime-form-header.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,15 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FooterComponent,
     LoginComponent,
     ReportFormComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    CrimeFormComponent,
+    CrimeFormHeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
