@@ -4,7 +4,8 @@
 }
 
 #tittle{
-    margin: 90px;
+    margin-top: 90px;
+    margin-left: 40px;
     color: black;
     width: 80%;
 }
@@ -25,21 +26,58 @@
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.4000000059604645px;
-    text-align: left;
     color: rgba(60, 60, 67, 0.6);
 }
 
 .report-form{
     background-color: rgba(255, 255, 255, 1);
-    width: 400px;
-    height: 700px;
-    margin-left: 90px;
+    width: 500px;
+    height: 900px;
+    margin-left: 50px;
+    margin-top: 40px;
     border: none;
     border-radius: 15px;
     box-shadow: 1px 1px 1px 1px rgb(200, 193, 193);
 }
 
-.field{
-    padding-top: 2000000px;
-    margin-left: 25px;
+.form-content{
+    width: 450px;
+    height: 800px;
+    margin-top: 40px;
 }
+
+#socials{
+    width: 250px;
+    height: 35px;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+#crimetype{
+    width: 250px;
+    height: 35px;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.field{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 590;
+    line-height: 18px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: rgba(60, 60, 67, 0.6);
+    margin: 70px;
+}
+
+.report-form input{
+    margin-left: 70px;
+    width: 250px;
+    height: 35px;
+    padding: 10px, 14px, 10px, 14px;
+    border-radius: 8px;
+}
+

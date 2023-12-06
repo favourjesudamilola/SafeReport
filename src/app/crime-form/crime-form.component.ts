@@ -10,6 +10,7 @@ export class CrimeFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

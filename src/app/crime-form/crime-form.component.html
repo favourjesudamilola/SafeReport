@@ -10,32 +10,51 @@
 
         <form>
             <div class="report-form">
-                <label class="field">Time of Crime</label><br>
-                <input type="time"><br>
+                <div class="form-content">
+                    <br><label class="field">Time of Crime</label><br>
+                    <input type="time"><br><br>
 
-                <label class="field">Date of Crime</label><br>
-                <input type="date"><br>
+                    <label class="field">Date of Crime</label><br>
+                    <input type="date"><br><br>
 
-                <label class="field">Type of Cybercrime</label><br>
-                <input type=""><br>
+                    <label class="field">Type of Cybercrime</label><br>
+                    <select id="crimetype" name="crimetype">
+                        <option value="CyberStalking">Cyber Stalking</option>
+                        <option value="Identity theft">Identity Theft</option>
+                        <option value="CyberBullying">Cyber Bullying</option>
+                        <option value="internet fraud">Internt Fraud</option>
+                        <option value="online scams">Online Scams</option>
+                    </select><br><br>
 
-                <label class="field">Fullname</label><br>
-                <input type="text"><br>
+                    <label class="field">Fullname</label><br>
+                    <input type="text"><br><br>
 
-                <label class="field">Social Media used</label><br>
-                <input type="date"><br>
+                    <label class="field">Social Media used</label><br>
+                    <select id="socials" name="socials">
+                        <option value="twitter">Twitter</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="telegram">Telegram</option>
+                        <option value="whatsapp">Whatapp</option>
+                        <option value="linkedIn">LinkedIn</option>
+                        <option value="slack">Slack</option>
+                        <option value="discord">Discord</option>
+                    </select><br><br>
 
-                <label class="field">Socialmedia Handle</label><br>
-                <input type="date"><br>
+                    <label class="field">Socialmedia Handle</label><br>
+                    <input type="text"><br><br>
 
-                <label class="field">Email address used</label><br>
-                <input type="date"><br>
+                    <label class="field">Email address used</label><br>
+                    <input type="email"><br><br>
 
-                <label class="field">Phone number</label><br>
-                <input type="number"><br>
+                    <label class="field">Phone number</label><br>
+                    <input type="number"><br><br>
 
-                <label class="field">Detailed description of the crime</label><br>
-                <input type="text"><br>
+                    <label class="field">Detailed description of the crime</label><br>
+                    <input type="text"><br><br>
+
+                    <input type="file" class="evidence" name="evidence" #selfie accept="image/jpeg, image/jpg, image/png, image/gif">
+                    <input type="button" value="Submit">
+                </div>
             </div>
         </form>
     
