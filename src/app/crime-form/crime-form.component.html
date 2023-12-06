@@ -8,17 +8,17 @@
                 victims using our innovative digital platform. <br>we believe in <strong>Justice</strong> being served.</p>
         </div>
 
-        <form>
+        <form [formGroup]="reportDetails">
             <div class="report-form">
                 <div class="form-content">
                     <br><label class="field">Time of Crime</label><br>
-                    <input type="time"><br><br>
+                    <input type="time" formControlName="time"><br><br>
 
                     <label class="field">Date of Crime</label><br>
-                    <input type="date"><br><br>
+                    <input type="date"  formControlName="date"><br><br>
 
                     <label class="field">Type of Cybercrime</label><br>
-                    <select id="crimetype" name="crimetype">
+                    <select id="crimetype" name="crimeType" formControlName="crimeType"  >
                         <option value="CyberStalking">Cyber Stalking</option>
                         <option value="Identity theft">Identity Theft</option>
                         <option value="CyberBullying">Cyber Bullying</option>
@@ -27,10 +27,10 @@
                     </select><br><br>
 
                     <label class="field">Fullname</label><br>
-                    <input type="text"><br><br>
+                    <input type="text" formControlName="fullName" ><br><br>
 
                     <label class="field">Social Media used</label><br>
-                    <select id="socials" name="socials">
+                    <select id="socials" name="socials" formControlName="socials">
                         <option value="twitter">Twitter</option>
                         <option value="instagram">Instagram</option>
                         <option value="telegram">Telegram</option>
@@ -41,19 +41,89 @@
                     </select><br><br>
 
                     <label class="field">Socialmedia Handle</label><br>
-                    <input type="text"><br><br>
+                    <input type="text" formControlName="handle"><br><br>
 
                     <label class="field">Email address used</label><br>
-                    <input type="email"><br><br>
+                    <input type="email" formControlName="email"><br><br>
 
                     <label class="field">Phone number</label><br>
-                    <input type="number"><br><br>
+                    <input type="number" formControlName="phoneNumber" ><br><br>
 
                     <label class="field">Detailed description of the crime</label><br>
-                    <input type="text"><br><br>
+                    <input type="text" formControlName="description"><br><br>
 
-                    <input type="file" class="evidence" name="evidence" #selfie accept="image/jpeg, image/jpg, image/png, image/gif">
-                    <input type="button" value="Submit">
+                    <div class="image-main">
+        <div
+          class="image-row"
+          [ngClass]="{ 'mr-0': last }"
+          *ngFor="
+            let uploadNumber of uploadNumbers;
+            let i = index;
+            let last = last
+          "
+        >
+          <div
+            
+            *ngIf="images[i]; else upload"
+          >
+            <div class="">
+              <div
+                class="group"
+              >
+                <div
+                  class="single-image"
+                >
+                  <div
+                    (click)="deleteImg(i)"
+                    class="deleted"
+                  >
+                    <img
+                      src="../../../assets/svg/Deletelight.svg"
+                      alt="delete"
+                      class="pr-3"
+                    />
+                    <p class="text">Delete</p>
+                  </div>
+                </div>
+
+                <img
+                  class="imaged"
+                  src="{{ images[i] }}"
+                  alt="product"
+                />
+              </div>
+            </div>
+          </div>
+          <ng-template #upload>
+            <div
+              (click)="file.click()"
+              class="upload"
+            >
+              <div class="pb-6">
+                <img
+                  src="../../../assets//svg/Path.svg"
+                  alt="add image icon"
+                  class="width-full mx-auto pt-6 pb-4"
+                />
+                <p  class="green">
+                  Upload Evidence
+                </p>
+                <input
+                  type="file"
+                  class="file-upload"
+                  hidden
+                  #file
+                  (change)="uploadFile($event, i)"
+                  accept="image/png, image/gif, image/jpeg"
+                  name="file"
+                  formControlName="file"
+                />
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+                   <button class="field"> Submit</button>
                 </div>
             </div>
         </form>
