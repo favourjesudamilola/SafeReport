@@ -19,12 +19,19 @@
 
                     <label class="field">Type of Cybercrime</label><br>
                     <select id="crimetype" name="crimeType" formControlName="crimeType"  >
-                        <option value="CyberStalking">Cyber Stalking</option>
-                        <option value="Identity theft">Identity Theft</option>
+                        <option class="select" value="CyberStalking">Cyber Stalking</option>
+                        <option class="select" value="Identity theft">Identity Theft</option>
                         <option value="CyberBullying">Cyber Bullying</option>
                         <option value="internet fraud">Internt Fraud</option>
                         <option value="online scams">Online Scams</option>
                     </select><br><br>
+
+                    <div class="crimebtn">
+
+                      <button class="btn1">Suspect</button>
+                      <button class="btn2">Perpetrator</button>
+
+                    </div><br>
 
                     <label class="field">Fullname</label><br>
                     <input type="text" formControlName="fullName" ><br><br>
@@ -121,9 +128,12 @@
               </div>
             </div>
           </ng-template>
+          
         </div>
-      </div>
-                   <button class="field"> Submit</button>
+        <div class="submitbtn">
+          <button class="btn1"> Submit</button>
+        </div>
+      </div>          
                 </div>
             </div>
         </form>
