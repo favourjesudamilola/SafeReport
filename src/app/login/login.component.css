@@ -67,6 +67,7 @@
     width: 300px;
     height: 40px;
     border: none;
+    outline: none;
     box-shadow: 1px 1px 1px 1px rgb(200, 193, 193);
     background-color: rgba(113, 117, 121, 0.16);
     border-radius: 5px;
