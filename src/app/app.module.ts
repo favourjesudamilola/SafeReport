@@ -14,6 +14,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CrimeFormComponent } from './crime-form/crime-form.component';
 import { CrimeFormHeaderComponent } from './crime-form-header/crime-form-header.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CrimeFormHeaderComponent } from './crime-form-header/crime-form-header.
     ReportFormComponent,
     ContactUsComponent,
     CrimeFormComponent,
-    CrimeFormHeaderComponent
+    CrimeFormHeaderComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
