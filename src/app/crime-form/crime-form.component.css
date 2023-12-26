@@ -113,20 +113,24 @@
   width: 100%;
   border-radius: 0.375rem; 
   text-align: center;
+  background-color: red !important;
   
 }
 
 .deleted{
-     display: flex;
-  justify-content: flex-start;
+    display: flex;
   position: absolute;
-  align-items: center;
+  justify-content: center;
   cursor: pointer;
   width: 80px;
-  padding-bottom: 0.5rem; 
+  padding-bottom: 0.5rem;
   top: 50%;
-  left: 33.3333%; 
+  left: 50%;
   transform: translate(-50%, -50%);
+}
+.deleted:hover {
+  display: block !important;
+  cursor: pointer;
 }
 
 .text{
@@ -134,9 +138,9 @@
 }
 
 .imaged{
-      width: 80px;
- 
-  margin-left: auto;
+     height: 300px;
+   width: 98%;
+  margin-left: 35px !important;
   margin-right: auto;
   object-fit: cover;
   overflow: hidden;
@@ -165,6 +169,7 @@
 .green{
     color: rgba(60, 60, 67, 0.30);
 }
+
 
 
 

@@ -53,7 +53,9 @@
                     <input type="text" formControlName="description"><br><br>
 
                     <div class="image-main">
-        <div
+
+                      <!-- image -->
+        <!-- <div
           class="image-row"
           [ngClass]="{ 'mr-0': last }"
           *ngFor="
@@ -76,6 +78,7 @@
                   <div
                     (click)="deleteImg(i)"
                     class="deleted"
+                    
                   >
                     <img
                       src="../../../assets/svg/Deletelight.svg"
@@ -121,7 +124,80 @@
               </div>
             </div>
           </ng-template>
+        </div> -->
+
+         <div     class="image-row">
+        <div
+              class="image-row"
+          [ngClass]="{ 'mr-0': last }"
+          *ngFor="
+            let uploadNumber of uploadNumbers;
+            let i = index;
+            let last = last
+          "
+        >
+          <div
+            class="w-full block lg:flex justify-center"
+            *ngIf="images[i]; else upload"
+          >
+            <div class="">
+              <div
+                 class="group"
+              >
+                <div
+                  class="hidden absolute bg-[rgba(17,17,17,0.48)] z-20 w-full h-[190px] rounded group-hover:block text-center"
+                >
+                  <div
+                    (click)="deleteImg(i)"
+                    class="deleted"
+                  >
+                    <img
+                      src="../../../assets/svg/Deletelight.svg"
+                      alt="delete"
+                      class="pr-3"
+                    />
+                    <p class="text">Delete</p>
+                  </div>
+                </div>
+
+                <img
+                class="imaged"
+                  src="{{ images[i] }}"
+                  alt="product"
+                />
+              </div>
+            </div>
+          </div>
+          <ng-template #upload>
+            <div
+              (click)="file.click()"
+              class="upload"
+            >
+              <div class="pb-6">
+                <img
+                  src="../../../assets//svg/Path.svg"
+                  alt="add image icon"
+                  class="width-full mx-auto pt-6 pb-4"
+                />
+               <p  class="green">
+                  Upload Evidence
+                </p>
+                <input
+                  type="file"
+                  class="file-upload"
+                  hidden
+                  #file
+                  (change)="uploadFile($event, i)"
+                  accept="image/png, image/gif, image/jpeg"
+                  name="product_file"
+                  formControlName="product_file"
+                />
+              </div>
+            </div>
+          </ng-template>
         </div>
+      </div> 
+
       </div>
                    <button class="field"> Submit</button>
                 </div>
