@@ -1,4 +1,6 @@
 .container{
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     height: 82vh;
     margin: 80px;
@@ -54,6 +56,12 @@
     color: white;
 }
 
+.bannerimage{
+    width: 500px;
+    background-image: url(/assets/images/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /**Why use SafeReport**/
 .Why-SafeReport{
@@ -108,7 +116,8 @@
 }
 
 .benefits .benefits-image{
-    background-color: rgb(18, 16, 16);
+    background-image: url("/assets/images/form.png");
+    background-size: contain;
     width: 400px;
     border-radius: 15px;
     margin-right: 80px;
@@ -135,7 +144,8 @@
     margin-top: 80px;
     border-radius: 15px;
     margin-left: 70px;
-    background-color: rgb(45, 45, 43);
+    background-image: url("/assets/images/list.png");
+    background-size: contain;
 }
 
 .how-it-works{
@@ -279,7 +289,8 @@
 }
 
 .image{
-    background: rgba(235, 235, 245, 0.3);
+    background-image: url("/assets/images/footer.png");
+    background-size: contain;
     width: 30%;
     border-radius: 10px;
     margin-right: 80px;
