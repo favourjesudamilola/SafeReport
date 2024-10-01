@@ -108,3 +108,19 @@
     width: 350px;
     height: 450px;
 }
+
+@media screen and (max-width: 430px) {
+    #main{
+        width: 400px;
+        margin-left: 25px;
+    }
+    .login-content{
+        width: 380px;
+        margin-left: 10px;
+        margin-top: 5px;
+        height: 500px;
+    }
+    .loginimg{
+        display: none;
+    }
+}

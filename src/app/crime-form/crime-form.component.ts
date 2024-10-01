@@ -65,3 +65,4 @@ export class CrimeFormComponent implements OnInit {
     this.images.splice(index, 1);
   }
 }
+//alert ('response saved successfully')

@@ -2,3 +2,9 @@
 *{
     margin: 0;
 }
+
+@media screen and (max-width: 430px) {
+    *{
+        padding: 0;
+    }
+}

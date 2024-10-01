@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!--<div class="container-fluid">
     <div class="navbar">
         <a routerLink="/">
             <div class="left">
@@ -6,6 +6,7 @@
             </div>
         </a>
 </div>
+-->
 
 <section>
     <div id="main">
@@ -15,15 +16,15 @@
                 to view and manage incident reports. Your role is crucial <br>in maintaining the safety and integrity of our community.
             </p>
 
-            <form FormGroup = "login">
+            <form [formGroup] = "login" (ngSubmit)="handleLogin()">
                 <div class="Register">
                     <label class="text">Email</label><br>
-                    <input formControlName="Email" type="email" placeholder="john123@gmail.com"><br>
-                    <span class="text-danger" *ngIf="login.controls['email'] && login.hasError('required', 'email')">*Email id is required</span><br>
+                    <input formControlName="email" type="email" placeholder="john123@gmail.com"><br>
+                    <span class="text-danger" *ngIf="login.controls.email?.invalid && (login.controls.email.dirty || login.controls.email.touched)">*Email is required</span><br>
 
                     <label class="text2">Password</label><br>
                     <input formControlName="password" type="password" placeholder="********">
-                    <span class="text-danger" *ngIf="login.controls['password'] && login.hasError('required', 'password')">*password is required</span><br>
+                    <span class="text-danger" *ngIf="login.controls.password?.invalid && (login.controls.password.dirty || login.controls.password.touched)">*password is required</span><br>
                     <!-- add error message using ngIf -->
                 </div>
 
@@ -31,7 +32,7 @@
                     <input id="check" type="checkbox" checked="checked" name="remember"> Remember me
                 </label><br>
 
-                <a routerLink="/crime-form" (click)="handleLogin()">
+                <a routerLink="/report-form">
                   <button type="submit" [disabled]="login.invalid" class="submit">login
                   </button>
                 </a>
@@ -44,4 +45,3 @@
     </div>
 </section>
 
-<app-footer></app-footer>

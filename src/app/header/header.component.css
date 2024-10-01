@@ -66,3 +66,29 @@
     border-radius: 50px;
     height: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .center{
+        width: 250px;
+        align-items: center;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .container-fluid{
+        width: 400px;
+    }
+    .navbar{
+        padding: 10px 30px;
+        width: 350px;
+    }
+
+    .nav-links{
+        margin: 5px;
+    }
+
+    .img{
+        width: 100px;
+    }
+}

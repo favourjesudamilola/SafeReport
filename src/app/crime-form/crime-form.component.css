@@ -230,3 +230,39 @@
     margin-bottom: 30px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 430px) {
+    #Form-section{
+        width: 365px;
+        margin-left: 28px;
+    }
+    .report-form{
+        width: 300px;
+        margin-left: 29px;
+    }
+    .form-content{
+        width: 20px;
+    }
+    .report-form input{
+        width: 200px;
+        margin-left: 20px;
+    }
+    #socials{
+        width: 200px;
+        margin-left: 20px;
+    }
+    #crimetype{
+        width: 200px;
+        margin-left: 20px;
+    }
+    .image-row{
+        width: 200px;
+    }
+    label {
+        background-color: blue;
+        width: 15000000%;
+        height: 15000%;
+        margin-left: 2px;
+        margin-top: 0px;
+    }
+}
