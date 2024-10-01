@@ -116,8 +116,7 @@
 }
 
 .benefits .benefits-image{
-    background-image: url("/assets/images/form.png");
-    background-size: contain;
+    background-repeat: no-repeat;
     width: 400px;
     border-radius: 15px;
     margin-right: 80px;
@@ -140,12 +139,10 @@
 
 .howdesc{
     width: 400px;
-    height: 350px;
+    height: 300px;
     margin-top: 80px;
     border-radius: 15px;
     margin-left: 70px;
-    background-image: url("/assets/images/list.png");
-    background-size: contain;
 }
 
 .how-it-works{
@@ -297,12 +294,11 @@
 }
 
 .image{
-    background-image: url("/assets/images/footer.png");
-    background-size: contain;
-    width: 30%;
+    width: 50%;
     border-radius: 10px;
-    margin-right: 80px;
+    margin-left: 180px;
     margin-top: 105px;
+    margin-bottom: 100px;
     height: 320px;
 }
 
