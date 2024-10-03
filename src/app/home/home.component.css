@@ -58,7 +58,6 @@
 
 .bannerimage{
     width: 500px;
-    background-image: url(/assets/images/banner.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -297,7 +296,7 @@
     width: 50%;
     border-radius: 10px;
     margin-left: 180px;
-    margin-top: 105px;
+    margin-top: 35px;
     margin-bottom: 100px;
     height: 320px;
 }
